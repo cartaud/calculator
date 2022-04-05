@@ -29,7 +29,7 @@ body {
     flex-direction: column;
 }
 
-#oppContainer {
+#opContainer {
     display: flex;
     flex-direction: column;
 }
@@ -39,7 +39,8 @@ body {
     padding: 5px;
 }
 
-.opp {
-    background-color: cornflowerblue;
+.op {
+    background-color: rgb(11, 60, 151);
+    color: white;
     margin-top: 5px;
 }

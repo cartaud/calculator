@@ -5,30 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    
     <title>Calculator</title>
 </head>
 <body>
     <div id="container">
         <div id="screen">
-            <div>value</div>
-            <div>entering</div>
+            <div id="value">h</div>
+            <div id="entering"></div>
         </div>
         <div id="btnContainer">
             <div id="numberContainer">
                 <div>
-                    <button class="number">7</button>
-                    <button class="number">8</button>
-                    <button class="number">9</button>
+                    <button class="number" onClick="enter(7)">7</button>
+                    <button class="number" onClick="enter(8)">8</button>
+                    <button class="number" onClick="enter(9)">9</button>
                 </div>
                 <div>
-                    <button class="number">4</button>
-                    <button class="number">5</button>
-                    <button class="number">6</button>
+                    <button class="number" onClick="enter(4)">4</button>
+                    <button class="number" onClick="enter(5)">5</button>
+                    <button class="number" onClick="enter(6)">6</button>
                 </div>
                 <div>
-                    <button class="number">1</button>
-                    <button class="number">2</button>
-                    <button class="number">3</button>
+                    <button class="number" onClick="enter(1)">1</button>
+                    <button class="number" onClick="enter(2)">2</button>
+                    <button class="number" onClick="enter(3)">3</button>
                 </div>
                 <div>
                     <button class="number">0</button>
@@ -36,13 +37,13 @@
                     <button>(-)</button>
                 </div>
             </div>
-            <div id="oppContainer">
-                <button class="opp">clear</button>
-                <button class="opp">/</button>
-                <button class="opp">*</button>
-                <button class="opp">-</button>
-                <button class="opp">+</button>
-                <button class="opp">=</button>
+            <div id="opContainer">
+                <button class="op">clear</button>
+                <button class="op" onClick="enter('/')">/</button>
+                <button class="op" onClick="enter('*')">*</button>
+                <button class="op" onClick="enter('-')">-</button>
+                <button class="op" onClick="enter('+')">+</button>
+                <button class="op" onClick="enter('=')">=</button>
             </div>
             
         </div>
