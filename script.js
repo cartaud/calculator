@@ -57,6 +57,7 @@ function calculate(eq) {
 }
 
 function clear() {
-    disp.length = 0;
+    screenBot.innerHTML = '<p>hi<p>';
+    scrn.innerHTML = 'hi';
     //clear screen text too
 }
