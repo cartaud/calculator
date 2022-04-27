@@ -56,8 +56,12 @@ function calculate(eq) {
     enter(scrn.textContent)
 }
 
+let clearEl = document.querySelector('#clear');
+clearEl.addEventListener('click', clear)
+
 function clear() {
-    screenBot.innerHTML = '<p>hi<p>';
-    scrn.innerHTML = 'hi';
+    disp.length = 0;
+    screenBot.innerHTML = ``;
+    scrn.innerHTML = ``;
     //clear screen text too
 }
