@@ -1,7 +1,7 @@
-let scrn = document.getElementById('value'); //will store current value of operation at top of screen
-let screenBot = document.getElementById('entering'); //display what user is entering
+const scrn = document.getElementById('value'); //will store current value of operation at top of screen
+const screenBot = document.getElementById('entering'); //display what user is entering
 
-let clearEl = document.querySelector('#clear');
+const clearEl = document.querySelector('#clear');
 clearEl.addEventListener('click', clear)
 
 
@@ -63,5 +63,4 @@ function clear() {
     second.length = 0;
     screenBot.innerHTML = ``;
     scrn.innerHTML = ``;
-    //clear screen text too
 }
