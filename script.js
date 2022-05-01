@@ -27,12 +27,17 @@ function enter(val) {
         screenBot.textContent = first.join('') + op.join('') + second.join('');
     }
     else if (op.length != 0 && val/1 != val) {
-        calculate()
+        if (val == '=') {
+            calculate()
+        }
+        else {
+            calculate(val)
+        }
     }
 }
 
 
-function calculate() {
+function calculate(nextOp) {
     let x = parseInt(first.join(''));
     let y = parseInt(second.join(''));
     if (op[0] == '+') {
@@ -52,7 +57,7 @@ function calculate() {
     op.length = 0;
     second.length = 0;
     first[0] = scrn.textContent
-    enter(scrn.textContent)
+    enter(nextOp)
 }
 
 
